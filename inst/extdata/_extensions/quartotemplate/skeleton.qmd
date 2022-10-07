@@ -16,8 +16,6 @@ library(knitr)
 library(kableExtra)
 library(RColorBrewer)
 library(scales)
-library(wisconsink12)
-library(cityforwardcollective)
 ```
 
 ## Quarto
@@ -32,6 +30,7 @@ When you click the **Render** button a document will be generated that includes 
 1 + 1
 ```
 
+\newpage
 You can add options to executable code like this
 
 ```{r}

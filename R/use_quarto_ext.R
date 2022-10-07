@@ -48,7 +48,7 @@ use_quarto_ext <- function(file_name = NULL,
 
   # copy from internals
   file.copy(
-    from = system.file(paste0("extdata/_extensions/", ext_name), package = "cityforwardcollective"),
+    from = system.file(paste0("extdata/_extensions/", ext_name), package = "quartotemplate"),
     to = paste0("_extensions/"),
     overwrite = TRUE,
     recursive = TRUE,
@@ -64,21 +64,16 @@ use_quarto_ext <- function(file_name = NULL,
     message("Extension appears not to have been created")
   }
 
+  # create new qmd report based on skeleton
   readLines("_extensions/quartotemplate/skeleton.qmd") |>
     writeLines(text = _,
                con = paste0(out_dir, "/", file_name, ".qmd", collapse = ""))
 
+  # open the new file in the editor
   file.edit(paste0(out_dir, "/", file_name, ".qmd", collapse = ""))
 
+  # copy header.tex over as well
   readLines("_extensions/quartotemplate/header.tex") |>
     writeLines(text = _, con = paste0(out_dir, "/header.tex"))
 
-}
-
-#' List bundled Quarto extensions
-#'
-#' @return a string of available extensions for install
-#' @export
-available_extensions <- function(){
-  list.files(system.file("extdata/_extensions", package = "quartotemplate"))
 }
