@@ -65,7 +65,7 @@ use_quarto_ext <- function(file_name = NULL,
   }
 
   # create new qmd report based on skeleton
-  readLines("_extensions/quartotemplate/skeleton.qmd") |>
+  readLines("_extensions/quartotemplate/template.qmd") |>
     writeLines(text = _,
                con = paste0(out_dir, "/", file_name, ".qmd", collapse = ""))
 
