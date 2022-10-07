@@ -1,6 +1,6 @@
 # About
 
-This package is meant to serve as a example for how to include Quarto templates with extensions in a fashion that reproduces the functionality of R Markdown templates included with R packages.
+This package is meant to serve as a example for how to include Quarto templates with extensions in a fashion that reproduces the functionality of R Markdown templates included with R packages. The example included here could serve as a branded PDF report template.
 
 Specifically, the following functionality:
 
