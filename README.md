@@ -18,7 +18,7 @@ Install this package with the following code:
 remotes::install_github("Pecners/quartotemplate")
 ```
 
-The `use_quarto_ext()` function will implement the functionality listed above. For example, executing `use_quarto_ext(file_name = "test")` will create a new director called `test` with a `header.tex` file and `test.qmd` file for the the new report. `test.qmd` is based on `skeleton.qmd` found here: `inst` > `extdata` > `_extensions` > `quartotemplate` > `skeleton.qmd`
+The `use_quarto_ext()` function will implement the functionality listed above. For example, executing `use_quarto_ext(file_name = "test")` will create a new director called `test` with a `header.tex` file and `test.qmd` file for the the new report. `test.qmd` is based on `skeleton.qmd` found [here](./inst/extdata/_extensions/quartotemplate/skeleton.qmd): `inst` > `extdata` > `_extensions` > `quartotemplate` > `skeleton.qmd`
 
 # Credits
 
